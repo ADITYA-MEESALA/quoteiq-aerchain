@@ -1,0 +1,13 @@
+services:
+  quoteiq:
+    build: .
+    ports:
+      - "8501:8501"
+    env_file: .env
+    environment:
+      QUOTEIQ_DATA_DIR: /app/data
+    volumes:
+      - quoteiq-data:/app/data
+    restart: unless-stopped
+volumes:
+  quoteiq-data:

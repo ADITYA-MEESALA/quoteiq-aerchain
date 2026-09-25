@@ -1,0 +1,27 @@
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+.tools/
+.pytest_cache/
+.pytest_tmp/
+.test-run-*/
+.ruff_cache/
+.streamlit/secrets.toml
+data/
+demo_files/
+*.db
+*.sqlite3*
+*.log
+~$*.pptx
+test-results/
+dist/
+# Keep personal submission material local; publish only product/deployment docs.
+docs/*
+!docs/DEPLOY_STREAMLIT_CLOUD.md
+scripts/render_decision_note.py
+scripts/render_final_submission.py
+scripts/render_presentation.py

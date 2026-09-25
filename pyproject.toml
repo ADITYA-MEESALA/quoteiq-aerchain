@@ -1,0 +1,9 @@
+[project]
+name = "quoteiq"
+version = "1.0.0"
+requires-python = ">=3.12,<3.13"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+markers = ["live: requires a configured real AI provider and may incur API usage"]
